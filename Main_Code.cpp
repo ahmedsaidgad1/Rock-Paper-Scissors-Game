@@ -7,15 +7,15 @@ using namespace std;
 
 enum enGameChoice
 {
-    Stone = 1,
-    Paper = 2,
+    Stone    = 1,
+    Paper    = 2,
     Scissors = 3
 };
 enum enWinner
 {
-    Player = 1,
+    Player   = 1,
     Computer = 2,
-    Draw = 3
+    Draw     = 3
 };
 
 int RandomNum(int from, int to)
@@ -98,7 +98,6 @@ string WinnerToString(enWinner Winner)
     }
 }
 
-//       beginning of the Game
 enWinner WinnerOfRound(enGameChoice PlayerChoice, enGameChoice ComputerChoice)
 {
     if (PlayerChoice == ComputerChoice)
@@ -205,7 +204,7 @@ int main()
 
     do
     {
-        cout << "\n";
+        cout << endl;
         system("color 07");
         StartGame();
     } while (AskPlayAgain());
